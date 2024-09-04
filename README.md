@@ -36,4 +36,7 @@ On **PythonAnywhere**, you can easily host static HTML files without using any f
 
 > `Version 1.0` : [Released](https://github.com/imvickykumar999/vicksconstra/releases/tag/StaticDeployment)
 >
+>      unzip /home/vicksconstra/mysite/ConstraStaticDashboard.zip
+>      find /home/vicksconstra -type d -exec chmod 755 {} +
+>
 >![image](https://github.com/user-attachments/assets/b64f6763-94b9-42a1-ab58-f0f324d8ff19)
