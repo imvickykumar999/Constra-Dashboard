@@ -1,8 +1,8 @@
-># `Vicks Constra` : [`Dashboard`](https://vicksconstra.pythonanywhere.com/frest-html-admin-template/html/vertical-menu-template/index.html)
+># `Vicks Constra` : [`Dashboard`](https://constradashboard.pythonanywhere.com/dashboard/html/vertical-menu-template/index.html)
 >
 > `Me` : Just like github pages, if i add index.html in repo, it makes webpage, is this feature available in pythonanywhere.com without using any framework?
 >
-> Like this : [`Deployed Main Page`](https://vicksconstra.pythonanywhere.com/)
+> Like this : [`Deployed Main Page`](https://constradashboard.pythonanywhere.com/)
 >
 >![image](https://github.com/user-attachments/assets/ed3e7537-7fab-46a7-887c-426cda64686e)
 >
@@ -34,9 +34,9 @@
 ### Summary:
 On **PythonAnywhere**, you can easily host static HTML files without using any frameworks like Flask or Django. You just need to upload your files and configure the web app to serve static content, much like GitHub Pages.
 
-> `Version 1.0` : [Released](https://github.com/imvickykumar999/vicksconstra/releases/tag/StaticDeployment)
+> `Version 1.0` : [Released](https://github.com/imvickykumar999/Constra-Dashboard/releases/tag/StaticDeployment)
 >
->      unzip /home/vicksconstra/mysite/ConstraStaticDashboard.zip
->      find /home/vicksconstra -type d -exec chmod 755 {} +
+>      unzip /home/constradashboard/mysite/ConstraStaticDashboard.zip
+>      find /home/constradashboard -type d -exec chmod 755 {} +
 >
 >![image](https://github.com/user-attachments/assets/b64f6763-94b9-42a1-ab58-f0f324d8ff19)
