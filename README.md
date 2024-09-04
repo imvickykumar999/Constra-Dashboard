@@ -1,10 +1,8 @@
 ># `Vicks Constra` : [`Dashboard`](https://constradashboard.pythonanywhere.com/dashboard/html/vertical-menu-template/index.html)
 >
-> `Me` : Just like github pages, if i add index.html in repo, it makes webpage, is this feature available in pythonanywhere.com without using any framework?
+>[![image](https://github.com/user-attachments/assets/f4026a23-c874-4744-b206-392c4e5b91b2)](https://constradashboard.pythonanywhere.com/dashboard/html/vertical-menu-template/ui-carousel.html)
 >
-> Like this : [`Deployed Main Page`](https://constradashboard.pythonanywhere.com/)
->
->![image](https://github.com/user-attachments/assets/ed3e7537-7fab-46a7-887c-426cda64686e)
+> `Me` : Just like github pages, if i add index.html in repo, it makes webpage, is this feature available in pythonanywhere.com without using any framework. [`Deployed Main Page`](https://constradashboard.pythonanywhere.com/)
 >
 >`ChatGPT` : Yes, **PythonAnywhere** allows you to host simple static websites, similar to how GitHub Pages works, without the need for a web framework like Flask, Django, etc.
 
@@ -26,6 +24,8 @@
    - In the **Static files** section of the Web tab, add a new entry:
      - URL: `/` (this makes your `index.html` file accessible at the root URL).
      - Path: The directory where your `index.html` and other static files are located (e.g., `/home/yourusername/yourproject/`).
+
+![image](https://github.com/user-attachments/assets/ed3e7537-7fab-46a7-887c-426cda64686e)
 
 4. **Reload the Web App**:
    - After setting everything up, click the **Reload** button to activate the configuration.
