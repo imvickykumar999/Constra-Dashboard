@@ -1,6 +1,6 @@
 import os
 import hashlib
-from prettytable import PrettyTable
+import csv
 
 def calculate_checksum(filename, algorithm='sha256'):
     """Calculate the checksum of a file using the specified algorithm."""
@@ -18,20 +18,21 @@ def get_all_files_in_directory(directory):
             file_list.append(os.path.join(root, file))
     return file_list
 
-def calculate_checksums_for_directory(directory, algorithm='sha256'):
-    """Calculate checksums for all files in a directory and print in tabular form."""
+def calculate_checksums_for_directory(directory, output_file, algorithm='sha256'):
+    """Calculate checksums for all files in a directory and save them to a CSV file."""
     files = get_all_files_in_directory(directory)
     
-    table = PrettyTable()
-    table.field_names = ["File Path", f"{algorithm.upper()} Checksum"]
-    
-    for file in files:
-        checksum = calculate_checksum(file, algorithm)
-        table.add_row([file, checksum])
-    
-    print(table)
+    with open(output_file, mode='w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        # Write the header
+        csvwriter.writerow(["File Path", f"{algorithm.upper()} Checksum"])
+        
+        for file in files:
+            checksum = calculate_checksum(file, algorithm)
+            # Write file path and checksum to CSV
+            csvwriter.writerow([file, checksum])
 
 # Example usage
 directory_path = "."  # Specify the directory path you want to scan
-calculate_checksums_for_directory(directory_path, algorithm='sha256')
-
+output_file = "checksums.csv"  # CSV file to save the results
+calculate_checksums_for_directory(directory_path, output_file, algorithm='sha256')
